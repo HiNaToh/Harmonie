@@ -30,10 +30,8 @@
 					<a href="ModifComite.php"><img src="images/modifier.jpg" loading="lazy" title="Modifier d'un membre"/></a><br/>
 				</div>
 				<?php
-					include("connect.php");
 
 					//  connection
-					$conn = new mysqli(SERVEUR, LOGIN, MDP, BDD);
 					// test connection
 					if ($conn->connect_error) {
 						die("Connection failed: " . $conn->connect_error);

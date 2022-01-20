@@ -35,7 +35,6 @@
 				<p>rue : <input type="text" name="rue" /></p>
 				<p>code postal : <input type="text" name="code_postal" /></p>
 				<p>ville : <input type="text" name="ville" /></p>
-				<p><input type="submit" value="Envoyer"></p>
 			</form>
 			<?php require_once("footer.html")?>
 		</div>

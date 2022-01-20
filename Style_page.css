@@ -65,7 +65,6 @@
 #bloc_page
 {
 	width:80%;
-	margin:0 auto;
 	background-color:white;
 }
 
@@ -107,7 +106,6 @@ nav ul
 
 nav a
 {
-	margin-right:1em;
 	position:relative;									
 	font-size:2em;
 	color:black;
@@ -188,7 +186,6 @@ section h1, footer h1, nav a
 	}
 }
 
-
 #slideshow {
 	position: relative;
 	width: 480px;
@@ -219,7 +216,6 @@ body
 {
 	background:url('images/background.jpg')no-repeat 5%;
 	font-family:Trebuchet MS,Arial;
-	margin: 0;
 }
 
 #Bdd
@@ -265,7 +261,6 @@ aside
 
 #informations
 {
-	background-color:#EF4646;
 	box-shadow: 0px 3px 5px #000000;
 	border-radius:5px;
 	padding:15px;
@@ -280,11 +275,6 @@ aside a
 {
 	text-decoration:none;
 	color:white;
-}
-
-aside a:hover
-{
-	text-decoration:underline;
 }
 
 footer h1
@@ -339,14 +329,8 @@ footer a
     margin-top: 0;
 }
 
-#listes_reseaux li
-{
-	margin-right : 2em;
-}
-
 .youtube
 {
-	background-color:#00FFF7;
 	border-radius:10px;
 }
 
@@ -363,7 +347,6 @@ footer a
 
 .facebook:hover
 {
-	background-color:#27399E;
 }
 
 #footer_sitemap
@@ -375,16 +358,10 @@ footer a
 	display:flex;
 }
 
-#footer_legals ul
 {
-	display:flex;
-	position:relative;
-	align-items:center;
 }
 
-#footer_legals li
 {
-	margin-right : 3em;
 }
 
 .spacer {
@@ -395,7 +372,6 @@ footer a
 #mentions
 {
 	text-align:center;
-	margin:0 auto;
 }
 
 #mentions p
@@ -412,12 +388,6 @@ footer a
 #mentions h3
 {
 	font-size:1.5em;
-}
-
-#mentions a
-{
-	color: black;
-	text-decoration:none;
 }
 
 table 	{
@@ -439,21 +409,62 @@ th, td {
 
 tr:nth-child(even) {background-color: #f2f2f2;}
 
-#cookies
-{
-	background-color: #EF4646;
-	color:white;
-    text-align: center;
-    font-size: 1.2em;
-    z-index:5;
-	width:30%;
-	position: fixed;
-	top: 50%; left: 50%;
-	transform: translate(-50%, -50%);
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
 }
 
-#cookies a
-{
-	color:white;
-	text-decoration: none;
+input[type=submit] {
+    background-color: #53af57;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+input[type=submit]:hover {
+    background-color: white;
+    color: #53af57;
+    border: 1px solid #53af57;
+}
+
+/* Style the tab */
+.tab {
+	overflow: hidden;
+	border: 1px solid #ccc;
+	background-color: #f1f1f1;
+}
+  
+  /* Style the buttons that are used to open the tab content */
+.tab button {
+	background-color: inherit;
+	float: left;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 14px 16px;
+	transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+	background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+	background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+	display: none;
+	padding: 6px 12px;
+	border: 1px solid #ccc;
+	border-top: none;
 }

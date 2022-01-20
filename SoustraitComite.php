@@ -29,7 +29,6 @@
 				<p>nom : <input type="text" name="nom" /></p>
 				<p>prenom : <input type="text" name="prenom" /></p>
 				<p>titre : <input type="text" name="titre" /></p>
-				<p><input type="submit" value="Envoyer"></p>
 			</form>
 			<?php require_once("footer.html")?>
 		</div>

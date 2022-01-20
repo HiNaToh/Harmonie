@@ -28,34 +28,12 @@
 				<div id="mentions">
 					<h2>Mentions Légales</h2>
 					<h3>Harmonie Municipale de Vieux-Condé Fresnes</h3>
-					<p>Siège Social :</p>
 					<p>Rue du 8 Mai 1945</p>
 					<p>59690 Vieux-Condé</p><br/>
 					<p>Contact</p>
-					<p><a href="mailto:harmonie.vieuxconde.fresnes@gmail.com">harmonie.vieuxconde.fresnes@gmail.com</a></p><br/>
 					<p>Présidente de l'association</p>
 					<p>Christine DI BELLO</p><br/>
-					<p>Le site est édité par</p>
-					<p>Norman DI BELLO</p>
-					<p>Siège Social :</p>
-					<p>1618 rue Sadi Carnot</p>
 				</div>
-				<script>
-				function openCookie(evt, cookieName) {
-				var i;
-				var tabcontent = document.getElementsByClassName("tabcontent");
-				for (i = 0; i < tabcontent.length; i++) {
-					tabcontent[i].style.display = "none";
-				}
-				var tablinks = document.getElementsByClassName("tablinks");
-				for (i = 0; i < tablinks.length; i++) {
-					tablinks[i].className = tablinks[i].className.replace(" active", "");
-				}
-				document.getElementById(cookieName).style.display = "block";
-				evt.currentTarget.className += " active";
-				}
-				document.getElementById('cookies1').style.display = "block";
-				</script>
 			</section>
 			<?php require_once("footer.html")?>
         </div>

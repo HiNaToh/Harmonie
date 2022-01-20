@@ -59,13 +59,37 @@
 		<div id="cookies" style="display:block;">
 			<a href="javascript:deploie(cookies);">c'est le test</a>
 		</div>
+
+    <body>
         <div id="bloc_page">
 			<header>
 				<div id="titre_principal">
                     <div id="logo">
-						<a href="#"><img src="images/logo_harmonie_petit.jpg" alt="Le logo de l'harmonie de Vieux-Condé Frenes" loading="lazy" title="Retour à l'accueil"/></a>
 						<p><h1>Harmonie Municipale<br/>Vieux-Condé Fresnes</h1></p>
 					</div>
+				</div>
+				<div id="container">
+					<!-- zone de connexion -->
+					
+					<form action="verification.php" method="POST">
+						<h1><a href="javascript:deploie(test);">Connexion</a></h1>
+						<div id="test" style="display:none;">
+							<label><b>Nom d'utilisateur</b></label>
+							<input type="text" placeholder="Entrer le nom d'utilisateur" name="username" required>
+
+							<label><b>Mot de passe</b></label>
+							<input type="password" placeholder="Entrer le mot de passe" name="password" required>
+
+							<a href="javascript:deploie(test);"><input type="submit" id='submit' value='LOGIN' ></a>
+							<?php
+							if(isset($_GET['erreur'])){
+								$err = $_GET['erreur'];
+								if($err==1 || $err==2)
+									echo "<p style='color:red'>Utilisateur ou mot de passe incorrect</p>";
+							}
+							?>
+						</div>
+					</form>
 				</div>
 				<nav>
 					<ul>
@@ -93,10 +117,8 @@
 					<p>L'Harmonie (orchestre) est sous la direction du chef d'orchestre Mr. Bruno DANNA suivi du sous-chef Mr. Jacques Dewolf.</p>
 					<p>L'Harmonie (comité) est gérée par la présidente Mme. Christine DI BELLO et le comité composé de 
 					<?php
-					include("connect.php");
 
 					//  connection
-					$conn = new mysqli(SERVEUR, LOGIN, MDP, BDD);
 					// test connection
 					if ($conn->connect_error) {
 						die("Connection failed: " . $conn->connect_error);
